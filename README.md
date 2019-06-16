@@ -1,5 +1,3 @@
-
-
 En este documento se explica el funcionamiento del proyecto “Trayectorias”, el      
 cual funciona con un programa en C++ que cuenta con un ambiente gráfico y una       
 librería desarrollada en C que realiza todo el procesamiento de los datos, basada  
