@@ -1,7 +1,7 @@
-En este documento se explica el funcionamiento del proyecto “Trayectorias”, el      
+*En este documento se explica el funcionamiento del proyecto “Trayectorias”, el      
 cual funciona con un programa en C++ que cuenta con un ambiente gráfico y una       
 librería desarrollada en C que realiza todo el procesamiento de los datos, basada  
-en el programa desarrollado por Miguel Eduardo Venegas Monroy en Matlab.              
+en el programa desarrollado por Miguel Eduardo Venegas Monroy en Matlab.*           
 
 
 El objetivo de este proyecto es el desarrollo de un software que provea la capacidad  
