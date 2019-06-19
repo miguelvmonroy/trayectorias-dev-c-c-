@@ -349,3 +349,71 @@ En este caso la función solamente graficara los puntos sin marcar el número de
 punto, ya que aquí crecen demasiado,  
  trazando las líneas de un punto al siguiente y
 mostrando una gráfica con curvas más suaves.
+
+►►Utilizar el proyecto
+
+El proyecto consta de cuatro elementos:
+
+1. Librería interpolacion.h: Contiene las funciones desarrolladas en C para los
+cálculos de la interpolación y derivadas.
+
+2. Archivo .cpp: Archivo que contiene el código en C++ con sus respectivas
+funciones ya mencionadas.
+
+3. Proyecto de Dev C++: El archivo principal que une el resto de archivos. Este
+es el archivo que debe abrirse.
+
+4. Layout: Este archivo guarda la configuración de diseño para el espacio de
+trabajo del desarrollador, como qué archivos estaban abiertos y dónde
+estaban ubicados y usado para restaurar el diseño del área de trabajo para el
+proyecto.
+
+►►Problemas
+
+►Tamaño de los vectores resultado:
+
+Se analizó y comparo el tamaño de los vectores después de la modificación dentro de
+la función mi_interpolacion; se puede   
+ver que el resultado en C mejoro en
+comparación a la versión anterior, pero sigue sin entregar vectores con el mismo  
+tamaño de los de Matlab, entregando en C con 31 puntos en el plano vectores con
+334 valores y en Matlab con 341 valores.
+
+El tamaño de los vectores se cambió a 0, debido a que en Matlab los vectores inician en
+1 y en C en 0. Por lo que al   
+cambiarlo el ciclo tiene más interacciones, haciendo que
+puedan ingresarse más valores, sin embargo el tamaño no  
+ es el mismo.
+Se revisó y comparo el número de repeticiones que realiza el primer ciclo
+entregándonos un resultado  
+ de 10 repeticiones en ambos programas (C y Matlab), por
+lo que se procedió a analizar el número de repeticiones del  
+ segundo ciclo y se encontró
+que el número de repeticiones de este si varía entre ambos programas, entregándonos  
+los siguientes resultados por iteración:
+
+
+Se puede observar que en C se realiza una iteración menos en ciertas ocasiones y en
+la última 2 menos. Por lo cual se  
+ analizaron los datos del segundo ciclo.
+
+ Incremento real:
+
+En esta variable el resultado es igual en ambos casos
+
+Incremento real en C:
+
+Incremento real en Matlab:
+
+Valores de Z:
+
+Los valores que toma el segundo ciclo en la función mi_interpolacion si presentan resultados
+distintos, lo que hace que   
+los resultados entre ambos programas varíen.
+
+Como se puede ver los valores no son muy lejanos, pero a pesar de que en C la
+variable z es del tipo flotante esta no  
+ está tomando los valores decimales como lo
+hace en Matlab, provocando un numero de iteraciones menor que en   
+Matlab y que los
+valores de las derivadas sean distintos, ya que estos dependen de los valores de Z.
