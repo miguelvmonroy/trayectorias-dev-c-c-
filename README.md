@@ -118,3 +118,6 @@ los valores de tamaño
  de datos a utilizar sea igual en x como en y, si son iguales ya
 se puede calcular los valores de K, si no   
  despliega un mensaje.
+
+
+si señor yo soy de peñasco
