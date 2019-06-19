@@ -234,3 +234,118 @@ de arreglos y variables que serán
 necesarias en todo el proceso. Se utiliza una constante llamada MAX2, la cual tiene un  
  valor de 500; esto es para crear vectores grandes, ya que en C no se pueden crear
 vectores con un tamaño dinámico.
+
+Se crearon dos vectores de tipo entero con un tamaño de la constante MAXP para
+contener las coordenadas X, Y que el usuario ingrese:
+
+● X[MAXP]  
+● Y[MAXP]
+
+Se definen los arreglos que contienen los valores de las derivadas de la
+interpolación:
+
+● dx[MAX2]  
+● ddx[MAX2]  
+● dy[MAX2]  
+● ddy[MAX2]   
+
+Se definen también los arreglos resultado de la interpolación de la ruta “X” y “Y” .
+Debido al problema de los vectores con  
+ tamaño dinámico en C, se definen también
+unas variables de tipo entero que indican el número de datos que almacena el
+vector:
+
+● int_x[MAX2]  
+● int_y[MAX2]  
+● size_x  
+● size_y  
+
+Dentro de la función (cuando comienza a funcionar después de realizar la creación
+de las variables locales) se abre la  
+ ventana gráfica con una dimensión de 600x600
+pixeles.
+
+Después se llama a la función plano para trazar los ejes del plano X, Y y se ingresan
+los puntos con el ratón (mouse) en   
+el plano por el usuario.
+
+Después de haber ingresado los puntos se realiza la interpolación, haciendo el
+llamado a la función Interpolar de la librería interpolacion .h
+
+Una vez calculado esto dentro del programa, se tiene una función getch() para
+generar una pausa antes de mostrar el   
+resultado, por lo que se tendrá que presionar
+cualquier tecla en el teclado para continuar y visualizar el resultado de la  
+interpolación. Para esto se vuelve a trazar el plano y se llama a la función trazar2
+para graficar el resultado.
+
+Y por último, se cierra la ventana gráfica con la función closegraph() y termina el
+programa.
+
+►ginput
+
+Esta función tiene como objetivo el guardar los puntos en el plano capturados por el
+usuario, Almacenando estos valores   
+en los vectores que recibe como parámetros X[
+], Y[ ], con un límite de puntos definido por el parámetro num_points.
+
+Dentro de esta función se utiliza un tipo de dato llamado POINT de la librería
+graphics.h. Los objetos que son de este tipo   
+son capaces de almacenar valores X y
+Y. Utilizando la función GetCursorPos() obtenemos las coordenadas (x,y) de la  
+posición del puntero (ratón) y las almacenamos en el objeto de tipo POINT.
+Finalmente, con la función  
+ GetAsyncKeyState(VK_LBUTTON), detectamos si ocurre
+el evento en el que el usuario realiza click derecho con el ratón;   
+para de esta forma
+almacenar esas coordenadas en los vectores X, Y y se dibuja un punto en la
+posición.
+
+►plano
+
+Esta es una función muy sencilla y tiene como único objetivo el trazar las líneas de
+los ejes que marcan los cuadrantes en   
+un plano (X,Y). Para trazar una línea se utilizan las funciones moveto() que se encarga de mover el origen del trazado de   
+la línea y la función lineto() que dibuja la línea a la posición marcada.
+Para trazar el eje Y se movió el origen a la mitad del  
+ plano en el eje X y se trazó la
+línea hasta el máximo del eje Y. Teniendo en cuenta que la pantalla es de 600x600
+pixeles la,  
+mitad es de 300 pixeles y el máximo es de 600 pixeles.
+
+Para el eje X se usó la misma dinámica, pero al revés. Moviendo el origen a la mitad
+del eje Y (300 pixeles) y trazando la línea  
+ hasta el máximo del eje X (600 píxeles).
+
+ ►trazar
+ La función trazar fue creada para unir los puntos marcados por el usuario, y de esta
+ forma poder visualizar la ruta  
+  y el orden de una mejor manera; Recibiendo de
+ parámetros los vectores con las coordenadas X, Y y el número de puntos.
+
+ La función recibe las coordenadas y el número de puntos; y por medio de un ciclo va
+ dibujando líneas del punto uno al   
+ punto dos y así sucesivamente. Para una mejor
+ visualización del orden se mostró el número del punto haciendo una   
+ conversión de
+ un número de entero (int) a una cadena (char) para poder imprimirlo en la pantalla de
+ la siguiente manera:
+
+ La función sprintf() guarda el valor de i en la variable n que es de tipo cadena (char)
+ y con la función outtextxy() se  
+  imprime en la pantalla gráfica en las coordenadas que
+ le corresponde a ese punto, sumándole 10 pixeles para que no   
+ se encima en el
+ trazado de la línea.
+
+►trazar2
+
+El funcionamiento de la función trazar2() es igual al de trazar(). Recibiendo vectores
+con las coordenadas X y Y, y el  
+ número de puntos que son. Pero en este caso
+recibe vectores de tipo flotante que son el resultado de la interpolación.
+
+En este caso la función solamente graficara los puntos sin marcar el número del
+punto, ya que aquí crecen demasiado,  
+ trazando las líneas de un punto al siguiente y
+mostrando una gráfica con curvas más suaves.
