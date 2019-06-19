@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 En este documento se explica el funcionamiento del proyecto “Trayectorias”, el      
@@ -58,6 +59,66 @@ entendimiento. Las funciones son las siguientes:
 
 ● set_k
 
+=======
+>*En este documento se explica el funcionamiento del proyecto “Trayectorias”, el      
+>cual funciona con un programa en C++ que cuenta con un ambiente gráfico y una       
+>librería desarrollada en C que realiza todo el procesamiento de los datos, basada  
+>en el programa desarrollado por Miguel Eduardo Venegas Monroy en Matlab.*           
+
+
+El objetivo de este proyecto es el desarrollo de un software que provea la capacidad  
+de que un usuario pueda ingresar ciertos puntos en un plano (X,Y) por medio de una  
+interfaz gráfica y, que por medio de unos cálculos de interpolación, te retorne   
+la misma gráfica pero con curvas más suaves.
+
+Este proyecto consta de dos partes:
+
+● C++: La primera parte esta desarrollada en el lenguaje C++, es la encargada
+de proveer   
+la interfaz gráfica con la que el usuario interactúa. Donde esté
+ingresa los datos y muestra los resultados.
+
+● C: La segunda parte es desarrollada en el lenguaje C, esta es la encargada
+de la realización  
+de todos los cálculos que se requieren, Como lo son los
+cálculos de la interpolación, primera y    
+segunda derivada. Para mayor
+practicidad esta parte se implementó como una librería .h para   
+ser incluida en
+la parte del programa en C++.
+
+
+A continuación se hará una descripción de las funciones que componen este proyecto, por
+parte      
+ de la interfaz gráfica desarrollada en C++ y la librería desarrollada en C.
+
+2.1. Librería “interpolacion.h”                                     
+La librería interpolación tiene como objetivo ser la que contenga las funciones que
+realizan el procesamiento             
+ de los datos de entrada que son los puntos o
+coordenadas otorgados por el usuario, y de estos datos realizar               
+ las operaciones para
+calcular las derivadas y la interpolación de dichas coordenadas. Todo esto
+desarrollado     
+en el lenguaje C.
+
+Funciones elaboradas                     
+Dentro de esta librería se encuentran 8 funciones donde 5 de ellas tienen
+comunicación entre sí y se dividieron         
+ en funciones para un mejor orden y
+entendimiento. Las funciones son las siguientes:
+
+● Interpolar
+
+● mi_interpolacion
+
+● derivada
+
+● segundaderivada
+
+● set_k
+
+>>>>>>> 2723e77acd64f811039ca88988880d595b207907
 ● fill_array
 
 ● printArrI
@@ -118,6 +179,9 @@ los valores de tamaño
  de datos a utilizar sea igual en x como en y, si son iguales ya
 se puede calcular los valores de K, si no   
  despliega un mensaje.
+<<<<<<< HEAD
 
 
 si señor yo soy de peñasco
+=======
+>>>>>>> 2723e77acd64f811039ca88988880d595b207907
