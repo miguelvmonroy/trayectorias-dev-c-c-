@@ -25,13 +25,61 @@ practicidad esta parte se implementó como una librería .h para
 ser incluida en
 la parte del programa en C++.
 
-<center>
+
 <table>
-
+<center>
 <img src="imagen/imagen1.png" style="width:297px;height:338px">
-
-</table>
 </center>
+</table>
+
+
+
+
+
+
+
+
+<p align="center"></p>
+<table>
+    <thead>
+        <tr>
+            <th align="left">Column1</th>
+            <th align="center"><img src="imagen/imagen1.png" style="width:297px;height:338px">
+</th>
+            <th align="right">Column1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Column1</td>
+            <td align="center">Column1</td>
+            <td align="right">Column1</td>
+        </tr>
+    </tbody>
+</table>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+<center>
+<img src="imagen/imagen2.png" style="width:388px;height:343px">
+</center>
+</table>
 
 A continuación se hará una descripción de las funciones que componen este proyecto, por
 parte      
@@ -119,6 +167,11 @@ interpolación de “X” y “Y”
 llevándose los vectores necesarios y retornando el número
 de datos que se utilizan.
 
+<table>
+<center>
+<img src="imagen/imagen3.png" style="width:392px;height:54px">
+</center>
+</table>
 
 Después, por motivos de seguridad, se realiza una condición donde se verifique que
 los valores de tamaño  
@@ -126,8 +179,19 @@ los valores de tamaño
 se puede calcular los valores de K, si no,  
  despliega un mensaje.
 
+ <table>
+ <center>
+ <img src="imagen/imagen4.png" style="width:604px;height:143px">
+ </center>
+ </table>
 
 ►mi_interpolacion
+
+<table>
+<center>
+<img src="imagen/imagen5.png" style="width:604px;height:40px">
+</center>
+</table>
 
 En esta función se realiza la interpolación de las coordenadas de la ruta a tomar, así
 como el cálculo de la    
@@ -160,8 +224,20 @@ si lo afectarán sin la necesidad de realizar un retorno. En C al mandar un arre
 
 ● sd[ ]: Aquí se almacenan los valores de la segunda derivada.
 
+<table>
+<center>
+<img src="imagen/imagen6.png" style="width:400px;height:85px">
+</center>
+</table>
+
 Después dentro de un ciclo se realiza el proceso de sacar la interpolación y las
 derivadas del vector D[ ].
+
+<table>
+<center>
+<img src="imagen/imagen7.png" style="width:626px;height:403px">
+</center>
+</table>
 
 Al final de la función solamente se retorna el valor de j, donde este es un contador
 para almacenar el número de datos almacenados en los arreglos y así saber el
@@ -176,20 +252,44 @@ cambio en la inicialización de la variable b de 1 a 0;
  Lo que nos entrega vectores más
 grandes, permitiéndonos tener en el resultado final curvas más suaves.
 
+<table>
+<center>
+<img src="imagen/imagen8.png" style="width:207px;height:50px">
+</center>
+</table>
+
 -Derivada
 
 Esta función realiza la primera derivada de la función. Los cambios hechos en el
 traspaso de Matlab a C fueron casi nulos.
+
+<table>
+<center>
+<img src="imagen/imagen9.png" style="width:603px;height:319px">
+</center>
+</table>
 
 -Segunda derivada
 
 De igual forma que en la función de la primera derivada, el cambio que se realizó fue
 casi nulo quedando de la siguiente forma.
 
+<table>
+<center>
+<img src="imagen/imagen10real.png" style="width:602px;height:235px">
+</center>
+</table>
+
 -set_K
 
 En esta función se realiza el cálculo del vector K establecido en la función Interpolar
 por motivos de que la función no se extendiera demasiado.
+
+<table>
+<center>
+<img src="imagen/imagen10.png" style="width:574px;height:47px">
+</center>
+</table>
 
 Recibiendo como parámetros las derivadas de (x,y), el tamaño de los vectores y el
 puntero del vector K.
