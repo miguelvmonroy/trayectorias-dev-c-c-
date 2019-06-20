@@ -643,17 +643,41 @@ la última 2 menos. Por lo cual se
 
 Incremento real:
 
-En esta variable el resultado es igual en ambos casos
+En esta variable el resultado es igual en ambos casos.
 
 Incremento real en C:
 
+<table>
+<center>
+<img src="imagen/imagen40.png" style="width:169px;height:16px">
+</center>
+</table>
+
 Incremento real en Matlab:
+
+<table>
+<center>
+<img src="imagen/imagen41.png" style="width:361px;height:22px">
+</center>
+</table>
 
 Valores de Z:
 
 Los valores que toma el segundo ciclo en la función mi_interpolacion si presentan resultados
 distintos, lo que hace que   
 los resultados entre ambos programas varíen.
+
+<table>
+<center>
+<img src="imagen/imagen42.png" style="width:193px;height:146px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen43.png" style="width:605px;height:72px">
+</center>
+</table>
 
 Como se puede ver los valores no son muy lejanos, pero a pesar de que en C la
 variable z es del tipo flotante esta no  
