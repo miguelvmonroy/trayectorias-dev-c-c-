@@ -33,48 +33,6 @@ la parte del programa en C++.
 </table>
 
 
-
-
-
-
-
-
-<p align="center"></p>
-<table>
-    <thead>
-        <tr>
-            <th align="left">Column1</th>
-            <th align="center"><img src="imagen/imagen1.png" style="width:297px;height:338px">
-</th>
-            <th align="right">Column1</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td align="left">Column1</td>
-            <td align="center">Column1</td>
-            <td align="right">Column1</td>
-        </tr>
-    </tbody>
-</table>
-<p></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <table>
 <center>
 <img src="imagen/imagen2.png" style="width:388px;height:343px">
@@ -294,12 +252,24 @@ por motivos de que la función no se extendiera demasiado.
 Recibiendo como parámetros las derivadas de (x,y), el tamaño de los vectores y el
 puntero del vector K.
 
+<table>
+<center>
+<img src="imagen/imagen11.png" style="width:600px;height:227px">
+</center>
+</table>
+
 -fill_array
 
 El objetivo de esta función es el de llenar un vector de forma sencilla Cuando se
 requiere que sus valores sean incrementos de 1 en 1.  
 Esta función recibe el vector, el inicio y el fin de los datos con los que se va a
 rellenar.
+
+<table>
+<center>
+<img src="imagen/imagen12.png" style="width:303px;height:158px">
+</center>
+</table>
 
 -printArrI y printArrF
 
@@ -309,7 +279,17 @@ valores entero (int) y la otra de
 valores flotantes (float),
 Recibiendo como parámetros el vector y su tamaño.
 
+<table>
+<center>
+<img src="imagen/imagen13.png" style="width:377px;height:143px">
+</center>
+</table>
 
+<table>
+<center>
+<img src="imagen/imagen14.png" style="width:375px;height:148px">
+</center>
+</table>
 
 ►Desarrollo gráfico
 
@@ -342,6 +322,12 @@ necesarias en todo el proceso. Se utiliza una constante llamada MAX2, la cual ti
  valor de 500; esto es para crear vectores grandes, ya que en C no se pueden crear
 vectores con un tamaño dinámico.
 
+<table>
+<center>
+<img src="imagen/imagen15.png" style="width:321px;height:90px">
+</center>
+</table>
+
 Se crearon dos vectores de tipo entero con un tamaño de la constante MAXP para
 contener las coordenadas X, Y que el usuario ingrese:
 
@@ -372,12 +358,30 @@ de las variables locales) se abre la
  ventana gráfica con una dimensión de 600x600
 pixeles.
 
+<table>
+<center>
+<img src="imagen/imagen16.png" style="width:291px;height:47px">
+</center>
+</table>
+
 Después se llama a la función plano para trazar los ejes del plano X, Y y se ingresan
 los puntos con el ratón (mouse) en   
 el plano por el usuario.
 
+<table>
+<center>
+<img src="imagen/imagen17.png" style="width:361px;height:71px">
+</center>
+</table>
+
 Después de haber ingresado los puntos se realiza la interpolación, haciendo el
 llamado a la función Interpolar de la librería interpolacion .h
+
+<table>
+<center>
+<img src="imagen/imagen18.png" style="width:454px;height:40px">
+</center>
+</table>
 
 Una vez calculado esto dentro del programa, se tiene una función getch() para
 generar una pausa antes de mostrar el   
@@ -385,6 +389,12 @@ resultado, por lo que se tendrá que presionar
 cualquier tecla en el teclado para continuar y visualizar el resultado de la  
 interpolación. Para esto se vuelve a trazar el plano y se llama a la función trazar2
 para graficar el resultado.
+
+<table>
+<center>
+<img src="imagen/imagen19.png" style="width:304px;height:76px">
+</center>
+</table>
 
 Y por último, se cierra la ventana gráfica con la función closegraph() y termina el
 programa.
@@ -395,6 +405,12 @@ Esta función tiene como objetivo el guardar los puntos en el plano capturados p
 usuario, Almacenando estos valores   
 en los vectores que recibe como parámetros X[
 ], Y[ ], con un límite de puntos definido por el parámetro num_points.
+
+<table>
+<center>
+<img src="imagen/imagen20.png" style="width:330px;height:44px">
+</center>
+</table>
 
 Dentro de esta función se utiliza un tipo de dato llamado POINT de la librería
 graphics.h. Los objetos que son de este tipo   
@@ -408,6 +424,18 @@ para de esta forma
 almacenar esas coordenadas en los vectores X, Y y se dibuja un punto en la
 posición.
 
+<table>
+<center>
+<img src="imagen/imagen21.png" style="width:501px;height:306px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen22.png" style="width:390px;height:434px">
+</center>
+</table>
+
 ►plano
 
 Esta es una función muy sencilla y tiene como único objetivo el trazar las líneas de
@@ -420,15 +448,46 @@ línea hasta el máximo del eje Y. Teniendo en cuenta que la pantalla es de 600x
 pixeles la,  
 mitad es de 300 pixeles y el máximo es de 600 pixeles.
 
+<table>
+<center>
+<img src="imagen/imagen23.png" style="width:125px;height:53px">
+</center>
+</table>
+
 Para el eje X se usó la misma dinámica, pero al revés. Moviendo el origen a la mitad
 del eje Y (300 pixeles) y trazando la línea  
  hasta el máximo del eje X (600 píxeles).
 
+ <table>
+ <center>
+ <img src="imagen/imagen24.png" style="width:120px;height:54px">
+ </center>
+ </table>
+
+ <table>
+ <center>
+ <img src="imagen/imagen25.png" style="width:341px;height:157px">
+ </center>
+ </table>
+
+ <table>
+ <center>
+ <img src="imagen/imagen26.png" style="width:361px;height:400px">
+ </center>
+ </table>
+
  ►trazar
+
  La función trazar fue creada para unir los puntos marcados por el usuario, y de esta
  forma poder visualizar la ruta  
   y el orden de una mejor manera; Recibiendo de
  parámetros los vectores con las coordenadas X, Y y el número de puntos.
+
+ <table>
+ <center>
+ <img src="imagen/imagen27.png" style="width:327px;height:45px">
+ </center>
+ </table>
 
  La función recibe las coordenadas y el número de puntos; y por medio de un ciclo va
  dibujando líneas del punto uno al   
@@ -438,6 +497,12 @@ del eje Y (300 pixeles) y trazando la línea
  un número de entero (int) a una cadena (char) para poder imprimirlo en la pantalla de
  la siguiente manera:
 
+ <table>
+ <center>
+ <img src="imagen/imagen28.png" style="width:214px;height:32px">
+ </center>
+ </table>
+
  La función sprintf() guarda el valor de i en la variable n que es de tipo cadena (char)
  y con la función outtextxy() se  
   imprime en la pantalla gráfica en las coordenadas que
@@ -445,17 +510,47 @@ del eje Y (300 pixeles) y trazando la línea
  se encima en el
  trazado de la línea.
 
+ <table>
+ <center>
+ <img src="imagen/imagen29.png" style="width:321px;height:188px">
+ </center>
+ </table>
+
+ <table>
+ <center>
+ <img src="imagen/imagen30.png" style="width:362px;height:402px">
+ </center>
+ </table>
+
 ►trazar2
 
 El funcionamiento de la función trazar2() es igual al de trazar(). Recibiendo vectores
 con las coordenadas X y Y, y el  
- número de puntos que son. Pero en este caso
+número de puntos que son. Pero en este caso
 recibe vectores de tipo flotante que son el resultado de la interpolación.
+
+<table>
+<center>
+<img src="imagen/imagen31.png" style="width:362px;height:36px">
+</center>
+</table>
 
 En este caso la función solamente graficara los puntos sin marcar el número del
 punto, ya que aquí crecen demasiado,  
  trazando las líneas de un punto al siguiente y
 mostrando una gráfica con curvas más suaves.
+
+<table>
+<center>
+<img src="imagen/imagen32.png" style="width:355px;height:193px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen33.png" style="width:371px;height:411px">
+</center>
+</table>
 
 ►►Utilizar el proyecto
 
@@ -471,9 +566,16 @@ funciones ya mencionadas.
 es el archivo que debe abrirse.
 
 4. Layout: Este archivo guarda la configuración de diseño para el espacio de
-trabajo del desarrollador, como qué archivos estaban abiertos y dónde
+trabajo del desarrollador, como qué archivos  
+ estaban abiertos y dónde
 estaban ubicados y usado para restaurar el diseño del área de trabajo para el
 proyecto.
+
+<table>
+<center>
+<img src="imagen/imagen34.png" style="width:580px;height:122px">
+</center>
+</table>
 
 ►►Problemas
 
@@ -485,6 +587,18 @@ ver que el resultado en C mejoro en
 comparación a la versión anterior, pero sigue sin entregar vectores con el mismo  
 tamaño de los de Matlab, entregando en C con 31 puntos en el plano vectores con
 334 valores y en Matlab con 341 valores.
+
+<table>
+<center>
+<img src="imagen/imagen35.png" style="width:214px;height:34px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen36.png" style="width:252px;height:67px">
+</center>
+</table>
 
 El tamaño de los vectores se cambió a 0, debido a que en Matlab los vectores inician en
 1 y en C en 0. Por lo que al   
@@ -499,12 +613,35 @@ lo que se procedió a analizar el número de repeticiones del
 que el número de repeticiones de este si varía entre ambos programas, entregándonos  
 los siguientes resultados por iteración:
 
+<table>
+<center>
+<img src="imagen/imagen37a.png" style="width:69px;height:121px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen37b.png" style="width:102px;height:14px">
+</center>
+</table>
+
+<table>
+<center>
+<img src="imagen/imagen38.png" style="width:485px;height:38px">
+</center>
+</table>
 
 Se puede observar que en C se realiza una iteración menos en ciertas ocasiones y en
 la última 2 menos. Por lo cual se  
  analizaron los datos del segundo ciclo.
 
- Incremento real:
+ <table>
+ <center>
+ <img src="imagen/imagen39.png" style="width:624px;height:252px">
+ </center>
+ </table>
+
+Incremento real:
 
 En esta variable el resultado es igual en ambos casos
 
