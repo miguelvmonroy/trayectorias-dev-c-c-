@@ -25,6 +25,13 @@ practicidad esta parte se implementó como una librería .h para
 ser incluida en
 la parte del programa en C++.
 
+<center>
+<table>
+
+<img src="imagen/imagen1.png" style="width:297px;height:338px">
+
+</table>
+</center>
 
 A continuación se hará una descripción de las funciones que componen este proyecto, por
 parte      
