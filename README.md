@@ -1,1 +1,1 @@
-El objetivo de este proyecto es el desarrollo de un software que provea la capacidad de que un usuario pueda ingresar ciertos puntos en un plano (X,Y) por medio de una interfaz gráfica y, que por medio de unos cálculos de interpolación, te retorne la misma gráfica pero con curvas más suaves.
+The objective of this project is to develop software that provides the capability for a user to input certain points on a plane (X,Y) through a graphical interface, and, through some interpolation calculations, return the same graph but with smoother curves.
