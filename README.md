@@ -2,8 +2,8 @@ The objective of this project is to develop software that provides the capabilit
 
 
 ## Table of Contents
-- [Wiki](https://github.com/miguelvmonroy/2D-Path-Planning-Tool-in-Matlab/wiki)
+- [Wiki](https://github.com/miguelvmonroy/trayectorias-dev-c-c-/wiki)
 
 🛠 Technologies Used
 
-Matlab
+C++
